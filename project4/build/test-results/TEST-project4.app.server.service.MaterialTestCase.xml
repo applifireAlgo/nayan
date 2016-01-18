@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="project4.app.server.service.MaterialTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-01-18T10:16:21" hostname="cd20f030c673" time="0.796">
+  <properties/>
+  <testcase name="test1Save" classname="project4.app.server.service.MaterialTestCase" time="0.221"/>
+  <testcase name="test2Update" classname="project4.app.server.service.MaterialTestCase" time="0.075"/>
+  <testcase name="test3FindById" classname="project4.app.server.service.MaterialTestCase" time="0.005"/>
+  <testcase name="test3findBybrandcode" classname="project4.app.server.service.MaterialTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="project4.app.server.service.MaterialTestCase" time="0.487"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-01-18 10:16:21.553--ClientSession(2019938990)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Category_M (categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A13F76A7-0782-4C46-88D1-3CC8A58A91CA, SUllP5P5uOYVFe1ITcAzy2i224VNdOuSGdmdXGLI8vP5fExRuh, 1, AAAAA, 2016-01-18 10:16:21.55, null, 2016-01-18 10:16:21.55, 1, null]
+[EL Fine]: sql: 2016-01-18 10:16:21.632--ClientSession(1967602905)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Brand_M (brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [7DB70C9B-A33B-49EF-8231-581AE7045278, MFjqXLTMFNrlt8yxvSkDpkebJbISbHUZ4VOwFryt0vLzCzYaQL, A13F76A7-0782-4C46-88D1-3CC8A58A91CA, 1, AAAAA, 2016-01-18 10:16:21.55, null, 2016-01-18 10:16:21.55, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 10:16:21.711--ClientSession(556557903)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Material_M (materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E2F1C7D3-C8BB-49C3-BEC6-094AC48C80E6, 7DB70C9B-A33B-49EF-8231-581AE7045278, aPnRmRvy5b4lgdemyhcdqwMUQaQMgS5lJeoD6tgEkDUw0QdyW6, 1, AAAAA, 2016-01-18 10:16:21.674, null, 2016-01-18 10:16:21.674, 1, null]
+[EL Fine]: sql: 2016-01-18 10:16:21.767--ClientSession(804403845)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind => [1, E2F1C7D3-C8BB-49C3-BEC6-094AC48C80E6]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 10:16:21.77--ClientSession(260093500)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind => [E2F1C7D3-C8BB-49C3-BEC6-094AC48C80E6]
+[EL Fine]: sql: 2016-01-18 10:16:21.771--ClientSession(260093500)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--UPDATE ast_Material_M SET materialdesc = ?, updatedBy = ?, versionId = ? WHERE ((materialcode = ?) AND (versionId = ?))
+	bind => [l11rrDuXZzZ9v8b8ql5dhfpOiWLPDCC6x67f2kt6dnkk5uzCFr, AAAAA, 2, E2F1C7D3-C8BB-49C3-BEC6-094AC48C80E6, 1]
+[EL Fine]: sql: 2016-01-18 10:16:21.836--ClientSession(1201771054)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind => [1, E2F1C7D3-C8BB-49C3-BEC6-094AC48C80E6]
+[EL Fine]: sql: 2016-01-18 10:16:21.843--ClientSession(1862798526)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (brandcode = ?))
+	bind => [1, 7DB70C9B-A33B-49EF-8231-581AE7045278]
+[EL Fine]: sql: 2016-01-18 10:16:21.855--ClientSession(1922415205)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind => [E2F1C7D3-C8BB-49C3-BEC6-094AC48C80E6]
+[EL Fine]: sql: 2016-01-18 10:16:21.856--ClientSession(1922415205)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Material_M WHERE ((materialcode = ?) AND (versionId = ?))
+	bind => [E2F1C7D3-C8BB-49C3-BEC6-094AC48C80E6, 2]
+[EL Fine]: sql: 2016-01-18 10:16:22.129--ClientSession(417683708)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandcode = ?)
+	bind => [7DB70C9B-A33B-49EF-8231-581AE7045278]
+[EL Fine]: sql: 2016-01-18 10:16:22.131--ClientSession(417683708)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Brand_M WHERE ((brandcode = ?) AND (versionId = ?))
+	bind => [7DB70C9B-A33B-49EF-8231-581AE7045278, 1]
+[EL Fine]: sql: 2016-01-18 10:16:22.287--ClientSession(603981688)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind => [A13F76A7-0782-4C46-88D1-3CC8A58A91CA]
+[EL Fine]: sql: 2016-01-18 10:16:22.289--ClientSession(603981688)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Category_M WHERE ((categoryId = ?) AND (versionId = ?))
+	bind => [A13F76A7-0782-4C46-88D1-3CC8A58A91CA, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

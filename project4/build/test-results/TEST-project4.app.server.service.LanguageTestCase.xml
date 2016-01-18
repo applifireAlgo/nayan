@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="project4.app.server.service.LanguageTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-18T10:16:19" hostname="cd20f030c673" time="0.239">
+  <properties/>
+  <testcase name="test1Save" classname="project4.app.server.service.LanguageTestCase" time="0.089"/>
+  <testcase name="test2Update" classname="project4.app.server.service.LanguageTestCase" time="0.083"/>
+  <testcase name="test3FindById" classname="project4.app.server.service.LanguageTestCase" time="0.008"/>
+  <testcase name="test4Delete" classname="project4.app.server.service.LanguageTestCase" time="0.057"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 10:16:19.167--ClientSession(1636738682)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [F3B8EC06-A299-4B0F-BF6A-CE13DC115FCC, pS, mhQ, 36tX, 9, DsuAZRWNPvx7g5VBHl7U6KS8Pw4LpPf1m4R4nxsbW2LcdIyrGc, WZemlFb6rSOD8MNOp6R2LCDZb1VCEMYzk8M33erNKvf2cBzPGe, EoFag20qT7zDqm7OQTA0G4Miph66Y2CGtw0aOmuSec2T5eiE0I, VLQxB8hY3g7Xj37W6FalLfgpCWZttV3u, 1, AAAAA, 2016-01-18 10:16:19.159, null, 2016-01-18 10:16:19.159, 1, null]
+[EL Fine]: sql: 2016-01-18 10:16:19.247--ClientSession(328616585)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind => [1, F3B8EC06-A299-4B0F-BF6A-CE13DC115FCC]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 10:16:19.25--ClientSession(1047617976)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [F3B8EC06-A299-4B0F-BF6A-CE13DC115FCC]
+[EL Fine]: sql: 2016-01-18 10:16:19.251--ClientSession(1047617976)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--UPDATE ast_Language_M SET alpha2 = ?, alpha3 = ?, alpha4 = ?, alpha4parentid = ?, language = ?, languageDescription = ?, languageIcon = ?, languageType = ?, updatedBy = ?, versionId = ? WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [JY, C8F, 8Nqr, 0, HCypaqfT2gUd1P621wahKZbjy7WGMJxbuQgPH7XS1FrejhtxuK, 6MqydYVHBG6XrFwIcy9VUJCWd62FuUh80T2jkpqrvrJwGDjGx6, EsHHOmlXKrRas45buSsI3GfY1x8b4jraCwIF0TAQjZ4LH0uUdz, VWPqXB2hpRjilVmzArsMPvUAXi6hWYIy, AAAAA, 2, F3B8EC06-A299-4B0F-BF6A-CE13DC115FCC, 1]
+[EL Fine]: sql: 2016-01-18 10:16:19.329--ClientSession(920393660)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind => [1, F3B8EC06-A299-4B0F-BF6A-CE13DC115FCC]
+[EL Fine]: sql: 2016-01-18 10:16:19.335--ClientSession(518675028)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [F3B8EC06-A299-4B0F-BF6A-CE13DC115FCC]
+[EL Fine]: sql: 2016-01-18 10:16:19.337--ClientSession(518675028)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [F3B8EC06-A299-4B0F-BF6A-CE13DC115FCC, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

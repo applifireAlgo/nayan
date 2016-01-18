@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class project4.app.server.service.DistributorTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class project4.app.server.service.DistributorTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/project4.app.server.service.html">project4.app.server.service</a> &gt; DistributorTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.466s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.174s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.082s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByregioncode</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.184s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-18 10:16:34.454--ClientSession(688514159)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SalesRegion_M (regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [35D960B1-3F26-490F-8EA5-AFB0899532A2, dmLTlJWvbsCIdkavGQ3lGzaNZHIOMSrs72BPugyLA9HToLTgMO, 1, AAAAA, 2016-01-18 10:16:34.452, null, 2016-01-18 10:16:34.452, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 10:16:34.524--ClientSession(440220341)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Distributor_M (distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [C386E28C-E7B2-4FDC-BCB0-24553724151F, N3x12IiaPkVmL8z8UcZjPEW5G2w2kmfoAahCKTabjsiUTLNe0g, 12.34, 12.34, 35D960B1-3F26-490F-8EA5-AFB0899532A2, 1, AAAAA, 2016-01-18 10:16:34.513, null, 2016-01-18 10:16:34.513, 1, null]
+[EL Fine]: sql: 2016-01-18 10:16:34.613--ClientSession(341348583)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE ((activeStatus = ?) AND (distributorcode = ?))
+	bind =&gt; [1, C386E28C-E7B2-4FDC-BCB0-24553724151F]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 10:16:34.617--ClientSession(1223137882)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE (distributorcode = ?)
+	bind =&gt; [C386E28C-E7B2-4FDC-BCB0-24553724151F]
+[EL Fine]: sql: 2016-01-18 10:16:34.619--ClientSession(1223137882)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--UPDATE ast_Distributor_M SET distributorname = ?, updatedBy = ?, versionId = ? WHERE ((distributorcode = ?) AND (versionId = ?))
+	bind =&gt; [j76Bw7IIwvWHDKIuOE2jMn89kzfZHMC2IDCN3FImAOcvAxkRh8, AAAAA, 2, C386E28C-E7B2-4FDC-BCB0-24553724151F, 1]
+[EL Fine]: sql: 2016-01-18 10:16:34.707--ClientSession(1226129962)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE ((activeStatus = ?) AND (distributorcode = ?))
+	bind =&gt; [1, C386E28C-E7B2-4FDC-BCB0-24553724151F]
+[EL Fine]: sql: 2016-01-18 10:16:34.713--ClientSession(1556778582)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE ((activeStatus = ?) AND (regioncode = ?))
+	bind =&gt; [1, 35D960B1-3F26-490F-8EA5-AFB0899532A2]
+[EL Fine]: sql: 2016-01-18 10:16:34.718--ClientSession(850441018)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE (distributorcode = ?)
+	bind =&gt; [C386E28C-E7B2-4FDC-BCB0-24553724151F]
+[EL Fine]: sql: 2016-01-18 10:16:34.719--ClientSession(850441018)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Distributor_M WHERE ((distributorcode = ?) AND (versionId = ?))
+	bind =&gt; [C386E28C-E7B2-4FDC-BCB0-24553724151F, 2]
+[EL Fine]: sql: 2016-01-18 10:16:34.768--ClientSession(1871280376)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE (regioncode = ?)
+	bind =&gt; [35D960B1-3F26-490F-8EA5-AFB0899532A2]
+[EL Fine]: sql: 2016-01-18 10:16:34.77--ClientSession(1871280376)--Connection(2003498793)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SalesRegion_M WHERE ((regioncode = ?) AND (versionId = ?))
+	bind =&gt; [35D960B1-3F26-490F-8EA5-AFB0899532A2, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 18, 2016 10:16:46 AM</p>
+</div>
+</div>
+</body>
+</html>
