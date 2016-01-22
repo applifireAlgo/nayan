@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.test.app.server.service.CaseSubmitionTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.test.app.server.service.CaseSubmitionTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.test.app.server.service.html">com.test.app.server.service</a> &gt; CaseSubmitionTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.326s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.162s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.064s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNQCaseQ</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-22 10:26:52.884--ClientSession(966857213)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CaseSubmition_T (caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [35E482D4-37C0-4ED1-A2A4-4A878D792009, r, 0PGAbpXvJgCGfhOHdAPKEhZktEsPHgqCoL7R6Rq3FeFkDUYRiS, 2147483647, 1970-01-02 10:17:36.789, 1, AAAAA, 2016-01-22 10:26:52.831, null, 2016-01-22 10:26:52.831, 1, null]
+[EL Fine]: sql: 2016-01-22 10:26:52.984--ClientSession(1094054931)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE ((activeStatus = ?) AND (caseId = ?))
+	bind =&gt; [1, 35E482D4-37C0-4ED1-A2A4-4A878D792009]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-22 10:26:52.988--ClientSession(1009291417)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE (caseId = ?)
+	bind =&gt; [35E482D4-37C0-4ED1-A2A4-4A878D792009]
+[EL Fine]: sql: 2016-01-22 10:26:52.99--ClientSession(1009291417)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--UPDATE ast_CaseSubmition_T SET caseDesc = ?, caseName = ?, submitionDate = ?, updatedBy = ?, versionId = ? WHERE ((caseId = ?) AND (versionId = ?))
+	bind =&gt; [i, qKX1nD3IrPt0a0I3ifK24CoxwxKQrmLmHuCBt7Oih9JpTotksB, 1970-01-02 10:17:36.789, AAAAA, 2, 35E482D4-37C0-4ED1-A2A4-4A878D792009, 1]
+[EL Fine]: sql: 2016-01-22 10:26:53.066--ClientSession(1332640692)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE ((activeStatus = ?) AND (caseId = ?))
+	bind =&gt; [1, 35E482D4-37C0-4ED1-A2A4-4A878D792009]
+[EL Fine]: sql: 2016-01-22 10:26:53.075--ClientSession(638268017)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE (caseId = ?)
+	bind =&gt; [35E482D4-37C0-4ED1-A2A4-4A878D792009]
+[EL Fine]: sql: 2016-01-22 10:26:53.077--ClientSession(638268017)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CaseSubmition_T WHERE ((caseId = ?) AND (versionId = ?))
+	bind =&gt; [35E482D4-37C0-4ED1-A2A4-4A878D792009, 2]
+[EL Fine]: sql: 2016-01-22 10:26:53.139--ClientSession(549676359)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE ((submitionDate &gt;= ?) AND (submitionDate &lt;= ?))
+	bind =&gt; [1970-01-02 10:17:36.789, 1970-01-02 10:17:36.789]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 22, 2016 10:26:54 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+Ext.define('Testproject.testproject.shared.com.test.model.defaultdomain.EmployeeModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "empId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "contactid",
+          "reference": "CoreContacts",
+          "defaultValue": ""
+     }, {
+          "name": "dept",
+          "reference": "Dept",
+          "defaultValue": ""
+     }, {
+          "name": "designation",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "jobType",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "pan",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

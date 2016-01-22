@@ -1,0 +1,31 @@
+Ext.define('Testproject.testproject.shared.com.test.model.defaultdomain.DeptModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "deptId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "dept",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "deptno",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.test.app.server.service.NewEntityTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-22T10:26:40" hostname="24a0df8043dc" time="0.321">
+  <properties/>
+  <testcase name="test1Save" classname="com.test.app.server.service.NewEntityTestCase" time="0.18"/>
+  <testcase name="test2Update" classname="com.test.app.server.service.NewEntityTestCase" time="0.067"/>
+  <testcase name="test3FindById" classname="com.test.app.server.service.NewEntityTestCase" time="0.011"/>
+  <testcase name="test4Delete" classname="com.test.app.server.service.NewEntityTestCase" time="0.063"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-22 10:26:40.397--ClientSession(412149658)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_NewEntity_M (newId, nName, nNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [11CE1534-2D61-4B6F-B245-90D2BF44F337, ZUp125egQOdEuY4YXbrKhgjSpXzcylthGVUiubLBxAjudmzEc6, 2147483647, 1, AAAAA, 2016-01-22 10:26:40.371, null, 2016-01-22 10:26:40.371, 1, null]
+[EL Fine]: sql: 2016-01-22 10:26:40.547--ClientSession(709694757)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT newId, nName, nNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_NewEntity_M WHERE ((activeStatus = ?) AND (newId = ?))
+	bind => [1, 11CE1534-2D61-4B6F-B245-90D2BF44F337]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-22 10:26:40.552--ClientSession(2129984268)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT newId, nName, nNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_NewEntity_M WHERE (newId = ?)
+	bind => [11CE1534-2D61-4B6F-B245-90D2BF44F337]
+[EL Fine]: sql: 2016-01-22 10:26:40.554--ClientSession(2129984268)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--UPDATE ast_NewEntity_M SET nName = ?, updatedBy = ?, versionId = ? WHERE ((newId = ?) AND (versionId = ?))
+	bind => [asD2HFiJpRaRDNlqlEwgcgFuw2RhbxFVb8pWMF3XnPvg1tir3N, AAAAA, 2, 11CE1534-2D61-4B6F-B245-90D2BF44F337, 1]
+[EL Fine]: sql: 2016-01-22 10:26:40.614--ClientSession(756890658)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT newId, nName, nNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_NewEntity_M WHERE ((activeStatus = ?) AND (newId = ?))
+	bind => [1, 11CE1534-2D61-4B6F-B245-90D2BF44F337]
+[EL Fine]: sql: 2016-01-22 10:26:40.625--ClientSession(1042773007)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT newId, nName, nNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_NewEntity_M WHERE (newId = ?)
+	bind => [11CE1534-2D61-4B6F-B245-90D2BF44F337]
+[EL Fine]: sql: 2016-01-22 10:26:40.627--ClientSession(1042773007)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_NewEntity_M WHERE ((newId = ?) AND (versionId = ?))
+	bind => [11CE1534-2D61-4B6F-B245-90D2BF44F337, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

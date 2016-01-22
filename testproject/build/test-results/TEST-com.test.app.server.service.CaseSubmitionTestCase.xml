@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.test.app.server.service.CaseSubmitionTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-01-22T10:26:52" hostname="24a0df8043dc" time="0.327">
+  <properties/>
+  <testcase name="test1Save" classname="com.test.app.server.service.CaseSubmitionTestCase" time="0.162"/>
+  <testcase name="test2Update" classname="com.test.app.server.service.CaseSubmitionTestCase" time="0.081"/>
+  <testcase name="test3FindById" classname="com.test.app.server.service.CaseSubmitionTestCase" time="0.01"/>
+  <testcase name="test4Delete" classname="com.test.app.server.service.CaseSubmitionTestCase" time="0.064"/>
+  <testcase name="testNQCaseQ" classname="com.test.app.server.service.CaseSubmitionTestCase" time="0.009"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-22 10:26:52.884--ClientSession(966857213)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CaseSubmition_T (caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [35E482D4-37C0-4ED1-A2A4-4A878D792009, r, 0PGAbpXvJgCGfhOHdAPKEhZktEsPHgqCoL7R6Rq3FeFkDUYRiS, 2147483647, 1970-01-02 10:17:36.789, 1, AAAAA, 2016-01-22 10:26:52.831, null, 2016-01-22 10:26:52.831, 1, null]
+[EL Fine]: sql: 2016-01-22 10:26:52.984--ClientSession(1094054931)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE ((activeStatus = ?) AND (caseId = ?))
+	bind => [1, 35E482D4-37C0-4ED1-A2A4-4A878D792009]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-22 10:26:52.988--ClientSession(1009291417)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE (caseId = ?)
+	bind => [35E482D4-37C0-4ED1-A2A4-4A878D792009]
+[EL Fine]: sql: 2016-01-22 10:26:52.99--ClientSession(1009291417)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--UPDATE ast_CaseSubmition_T SET caseDesc = ?, caseName = ?, submitionDate = ?, updatedBy = ?, versionId = ? WHERE ((caseId = ?) AND (versionId = ?))
+	bind => [i, qKX1nD3IrPt0a0I3ifK24CoxwxKQrmLmHuCBt7Oih9JpTotksB, 1970-01-02 10:17:36.789, AAAAA, 2, 35E482D4-37C0-4ED1-A2A4-4A878D792009, 1]
+[EL Fine]: sql: 2016-01-22 10:26:53.066--ClientSession(1332640692)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE ((activeStatus = ?) AND (caseId = ?))
+	bind => [1, 35E482D4-37C0-4ED1-A2A4-4A878D792009]
+[EL Fine]: sql: 2016-01-22 10:26:53.075--ClientSession(638268017)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE (caseId = ?)
+	bind => [35E482D4-37C0-4ED1-A2A4-4A878D792009]
+[EL Fine]: sql: 2016-01-22 10:26:53.077--ClientSession(638268017)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CaseSubmition_T WHERE ((caseId = ?) AND (versionId = ?))
+	bind => [35E482D4-37C0-4ED1-A2A4-4A878D792009, 2]
+[EL Fine]: sql: 2016-01-22 10:26:53.139--ClientSession(549676359)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT caseId, caseDesc, caseName, caseNo, submitionDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CaseSubmition_T WHERE ((submitionDate >= ?) AND (submitionDate <= ?))
+	bind => [1970-01-02 10:17:36.789, 1970-01-02 10:17:36.789]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

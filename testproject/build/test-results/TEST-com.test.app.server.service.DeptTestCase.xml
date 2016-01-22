@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.test.app.server.service.DeptTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-22T10:26:45" hostname="24a0df8043dc" time="0.21">
+  <properties/>
+  <testcase name="test1Save" classname="com.test.app.server.service.DeptTestCase" time="0.085"/>
+  <testcase name="test2Update" classname="com.test.app.server.service.DeptTestCase" time="0.066"/>
+  <testcase name="test3FindById" classname="com.test.app.server.service.DeptTestCase" time="0.008"/>
+  <testcase name="test4Delete" classname="com.test.app.server.service.DeptTestCase" time="0.049"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-22 10:26:45.365--ClientSession(1426939798)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Dept_M (deptId, dept, deptno, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [0BB930CB-BB82-46A3-80B9-09014885FB88, pVHu6nXTD76V5406PPBcAjC2kNm7lcXCbwLYhq1vMv82BnkxXQ, 2147483647, 1, AAAAA, 2016-01-22 10:26:45.356, null, 2016-01-22 10:26:45.356, 1, null]
+[EL Fine]: sql: 2016-01-22 10:26:45.433--ClientSession(511591323)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT deptId, dept, deptno, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Dept_M WHERE ((activeStatus = ?) AND (deptId = ?))
+	bind => [1, 0BB930CB-BB82-46A3-80B9-09014885FB88]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-22 10:26:45.437--ClientSession(421520375)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT deptId, dept, deptno, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Dept_M WHERE (deptId = ?)
+	bind => [0BB930CB-BB82-46A3-80B9-09014885FB88]
+[EL Fine]: sql: 2016-01-22 10:26:45.44--ClientSession(421520375)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--UPDATE ast_Dept_M SET dept = ?, updatedBy = ?, versionId = ? WHERE ((deptId = ?) AND (versionId = ?))
+	bind => [nKiAaLyhUJssFUxNisg3FI1oXq5Kk3IzhG4se5kaQEkMhiPsAm, AAAAA, 2, 0BB930CB-BB82-46A3-80B9-09014885FB88, 1]
+[EL Fine]: sql: 2016-01-22 10:26:45.498--ClientSession(122961045)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT deptId, dept, deptno, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Dept_M WHERE ((activeStatus = ?) AND (deptId = ?))
+	bind => [1, 0BB930CB-BB82-46A3-80B9-09014885FB88]
+[EL Fine]: sql: 2016-01-22 10:26:45.507--ClientSession(1800261656)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--SELECT deptId, dept, deptno, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Dept_M WHERE (deptId = ?)
+	bind => [0BB930CB-BB82-46A3-80B9-09014885FB88]
+[EL Fine]: sql: 2016-01-22 10:26:45.51--ClientSession(1800261656)--Connection(1191272328)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Dept_M WHERE ((deptId = ?) AND (versionId = ?))
+	bind => [0BB930CB-BB82-46A3-80B9-09014885FB88, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

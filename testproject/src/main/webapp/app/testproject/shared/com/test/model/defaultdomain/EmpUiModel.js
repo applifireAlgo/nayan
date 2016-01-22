@@ -1,0 +1,32 @@
+Ext.define('Testproject.testproject.shared.com.test.model.defaultdomain.EmpUiModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "firstName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "dept",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "designation",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "jobType",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "pan",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "empId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "contactId",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

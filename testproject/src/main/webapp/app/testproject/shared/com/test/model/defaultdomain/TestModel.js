@@ -1,0 +1,35 @@
+Ext.define('Testproject.testproject.shared.com.test.model.defaultdomain.TestModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "testId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "tdate",
+          "type": "date",
+          "defaultValue": ""
+     }, {
+          "name": "tName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "ttime",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
